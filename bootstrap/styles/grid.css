@@ -1,0 +1,38 @@
+.card-body-lightblue {
+  background-color: #e4ebf6;
+}
+.card-body-blue {
+  background-color: #aabee1;
+}
+.card {
+  border: 0;
+}
+.card-body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.card-text {
+  font-size: large;
+}
+.card-img {
+  object-fit: cover;
+  border-radius: 0;
+  max-height: 70%;
+}
+.card-text-body {
+  max-height: 30%;
+}
+.image-column {
+  max-height: 100%;
+}
+
+.h-50-except-md {
+  height: 50%;
+}
+
+@media (min-width: 768px) and (max-width: 991.99px) {
+  .h-50-except-md {
+    height: auto;
+  }
+}
