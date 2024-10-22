@@ -1,16 +1,53 @@
 @import "../node_modules/bootstrap/scss/functions";
+@import "../node_modules/bootstrap/scss/variables";
 
 $primary: #003066;
 $secondary: #EBE1C9;
 $success: #306319;
 $danger: #C11316;
 
+$primary-light: #AABEE1;
+$primary-lighter: #E4EBF6;
+$secondary-dark: #C18C0B;
+$secondary-darker: #754200;
+
+$theme-colors: (
+  "primary":    $primary,
+  "secondary":  $secondary,
+  "success":    $success,
+  "info":       $info,
+  "warning":    $warning,
+  "danger":     $danger,
+  "light":      $light,
+  "dark":       $dark
+);
+
+$custom-colors: (
+  "primary-light": $primary-light,
+  "primary-lighter": $primary-lighter,
+  "secondary-dark": $secondary-dark,
+  "secondary-darker": $secondary-darker
+);
+
+$theme-colors: map-merge($theme-colors, $custom-colors);
+
+$font-family-sans-serif: "Inter", sans-serif;
+$font-size-base: 1.25rem;
+$h1-font-size: 2.25rem;
+
 $btn-font-size: 1.5rem;
 $btn-padding-y: 0.5rem;
 $btn-padding-x: 4rem;
 $btn-border-radius: 0.625rem;
 
-$input-bg: $secondary;
-$form-check-input-checked-bg-color: #754200;
+$input-bg: $primary-lighter;
+$input-focus-bg: $primary-lighter;
+$input-focus-border-color: $primary-light;
+$form-check-input-bg: $secondary;
+$form-check-input-border: $secondary;
+$form-check-input-checked-bg-color: $secondary-darker;
+$form-check-input-focus-border: $secondary-darker; 
+
+$navbar-brand-font-size: 1.5rem;
 
 @import "../node_modules/bootstrap/scss/bootstrap";
