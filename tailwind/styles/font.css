@@ -2,11 +2,14 @@ h1 {
   font-family: "Sansita", serif;
   font-weight: 800;
   font-style: italic;
+  font-size: 2.25rem;
   line-height: 2.5rem
 }
-
+  
 h2 {
   font-weight: 600;
+  font-size: 1.875rem;
   line-height: 2.25rem
 }
-
+  
+  
