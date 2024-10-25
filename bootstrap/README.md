@@ -1,6 +1,15 @@
-
 How to run bootstrap:
 - `npm install`
 - `npm install -g sass` (install Dart sass globally. Mac OS might require `sudo npm install -g sass`)
 - `sass scss/custom.scss styles/custom.css` (to compile custom styles from sass to css)
 - open live server
+
+Color aliases:
+- primary
+- primary-light
+- primary-lighter
+- secondary
+- secondary-dark
+- secondary-darker
+- success
+- danger
