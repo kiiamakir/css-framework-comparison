@@ -1,0 +1,84 @@
+/* Base styles */
+nav {
+    background-color: #003066;
+}
+
+li {
+    display: flex;
+    align-content: center;
+}
+
+a {
+    color: white;
+    display: flex;
+    align-content: center;
+}
+
+a:hover {
+    color: white;
+}
+
+.badge {
+    font-size: 1.25rem;
+}
+
+.top-bar {
+    max-width: 90.063em;
+    margin: 0 auto;
+}
+
+.title-bar {
+    height: 76px;
+    padding: 0 2rem;
+    justify-content: space-between;
+}
+
+#nav-menu {
+    row-gap: 0.5rem;
+}
+
+/* Prevent FOUC */
+.top-bar,
+.title-bar,
+#dropdown-menu {
+    display: none;
+}
+
+.is-dropdown-submenu-parent:hover #dropdown-menu {
+    display: block;
+}
+
+/* Small only */
+@media screen and (max-width: 39.9375em) {
+    .title-bar {
+        display: flex;
+    }
+    .top-bar {
+        padding: 0 1.5rem 2rem;
+    }
+    .top-bar-right {
+        margin-top: 0.5rem;
+    }
+}
+
+/* Medium only */
+@media screen and (min-width: 40em) and (max-width: 63.9375em) {
+    .top-bar {
+        display: flex;
+        padding: 1rem 3rem;
+    }
+    #nav-menu {
+        column-gap: 2rem;
+    }
+}
+
+/* Large and up */
+@media screen and (min-width: 64em) {
+    .top-bar {
+        display: flex;
+        padding: 1rem 3.25rem;
+    }
+    #nav-menu {
+        column-gap: 3rem;
+    }
+}
