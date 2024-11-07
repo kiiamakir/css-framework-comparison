@@ -11,6 +11,7 @@
     <link href="styles/foundation-icons.css" rel="stylesheet">
     <link href="styles/font.css" rel="stylesheet">
     <link href="styles/navbar.css" rel="stylesheet">
+    <link href="styles/grid.css" rel="stylesheet">
     <title>Document</title>
 </head>
 <body>
@@ -44,7 +45,58 @@
       </div>
     </div>
   </nav>
-  <h1>Polar Preserve</h1>
+  <div class="title">
+    <h1 class="text-center">Polar Preserve</h1>
+  </div>
+  <!-- Grid -->
+  <div class="grid-container text-center">
+    <div class="grid-x">
+      <div class="cell large-6 medium-8 small-12">
+        <div class="card">
+          <img src="../../images/antarctica.png" class="card-img" alt="Photo of Antarctica">
+          <div class="card-section card-body-lightblue">
+            <p class="card-text">Combat climat change</p>
+          </div>
+        </div>
+      </div>
+      <div class="cell large-6 medium-4">
+        <div class="grid-x h-50-except-md">
+          <div class="cell large-6 medium-12 small-6 h-100">
+            <div class="card h-100">
+              <div class="card-section card-body-lightorange">
+                <p class="card-text">Advance scientific research</p>
+              </div>
+            </div>
+          </div>
+          <div class="cell large-6 medium-12 small-6 h-100">
+            <div class="card h-100">
+              <div class="card-section card-body-blue">
+                <p class="card-text">Raise global awareness</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="grid-x h-50-except-md">
+          <div class="cell large-6 medium-12 small-6 h-100">
+            <div class="card h-100">
+              <div class="card-section card-body-blue">
+                <p class="card-text">Support indigenous communities</p>
+              </div>
+            </div>
+          </div>
+          <div class="cell large-6 medium-12 small-6 h-100 image-column">
+            <div class="card h-100">
+              <img src="../../images/polar-bear.png" class="card-img" alt="Photo of polar bear">
+              <div class="card-section card-text-section card-body-lightblue ">
+                <p class="card-text">Protect wildlife</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/foundation-sites@6.6.3/dist/js/foundation.min.js"></script>
   <script>
