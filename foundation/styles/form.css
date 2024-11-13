@@ -1,0 +1,22 @@
+h1 {
+    padding-bottom: 1rem;
+}
+
+.form-container {
+    margin-top: 3rem;
+}
+
+.form-check-label {
+    font-size: 1.125rem;
+}
+
+.form-check {
+    accent-color: #754200;
+    transform: scale(1.2);
+}
+
+.form-check:checked {
+    background-color: #754200;
+    border-color: #754200;
+}
+ 
