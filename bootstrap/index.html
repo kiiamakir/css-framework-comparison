@@ -11,6 +11,7 @@
     <link href="styles/font.css" rel="stylesheet">
     <link href="styles/navbar.css" rel="stylesheet">
     <link href="styles/grid.css" rel="stylesheet">
+    <script src="scripts/modal.js"></script>
     <title>Document</title>
 </head>
 <body>
@@ -47,6 +48,7 @@
     </nav>
   </div>
 
+  <!-- Grid -->
   <div class="container text-center pt-5">
     <h1 class="mb-4 text-center">Polar Preserve</h1>
     <div class="row h-100">
@@ -95,6 +97,42 @@
       </div>
     </div>
   </div>
+
+  <!-- Modal -->
+  <div class="d-flex justify-content-center my-5">
+    <button
+      type="button"
+      class="btn btn-secondary"
+      data-bs-toggle="modal"
+      data-bs-target="#feedbackModal"
+    >
+      Give feedback
+    </button>
+  </div>
+  <div
+    class="modal fade"
+    id="feedbackModal"
+    tabindex="-1"
+    aria-labelledby="feedbackModalLabel"
+    aria-hidden="true"
+  >
+    <div class="modal-dialog modal-lg modal-dialog-centered">
+      <div class="modal-content bg-primary-light">
+        <div class="modal-body text-center py-5">
+          <h4 id="feedbackModalLabel">How satisfied are you with our website?</h4>
+          <div id="star-rating" class="d-flex justify-content-center py-2">
+            <span class="star" data-value="1" aria-label="1 star">&#9733;</span>
+            <span class="star" data-value="2" aria-label="2 stars">&#9733;</span>
+            <span class="star" data-value="3" aria-label="3 stars">&#9733;</span>
+            <span class="star" data-value="4" aria-label="4 stars">&#9733;</span>
+            <span class="star" data-value="5" aria-label="5 stars">&#9733;</span>
+          </div>
+          <p id="thank-you-message"></p>
+        </div>
+      </div>
+    </div>
+  </div>
+
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </body>
 </html>
