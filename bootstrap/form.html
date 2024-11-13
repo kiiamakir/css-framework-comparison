@@ -12,6 +12,7 @@
     <link href="styles/navbar.css" rel="stylesheet">
     <link href="styles/form.css" rel="stylesheet">
     <link href="styles/footer.css" rel="stylesheet">
+    <link href="styles/table.css" rel="stylesheet">
     <title>Document</title>
 </head>
 <body>
@@ -47,10 +48,48 @@
       </div>
     </nav>
   </div>
-  
   <div class="container my-5">
-    <h1 class="mb-4 text-center">Join us</h1>
-    <form class="d-flex flex-column gap-3">
+    <h1 class="mb-5 text-center">Programs</h1>
+    <div class="overflow-x-scroll">
+      <table class="table">
+        <thead class>
+          <tr>
+            <th scope="col" class="bg-primary-light">Program</th>
+            <th scope="col" class="bg-primary-light">Description</th>
+            <th scope="col" class="bg-primary-light">Location</th>
+            <th scope="col" class="bg-primary-light">Time</th>
+            <th scope="col" class="bg-primary-light">How to participate</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Clean-Up Expedition</td>
+            <td>A volunteer-based event focused on cleaning plastic and waste along Arctic shorelines</td>
+            <td>Tromsø, Norway</td>
+            <td>Biannually, in spring and summer</td>
+            <td>Sign up by filling out the form below</td>
+          </tr>
+          <tr>
+            <td>Polar Film Festival</td>
+            <td>Film festival featuring documentaries and short films about the Arctic and climate change</td>
+            <td>Virtual and in-person at rotating locations in North America</td>
+            <td>February, to align with World Polar Bear Day</td>
+            <td>Tickets can be purchased to attend in person or online</td>
+          </tr>
+          <tr>
+            <td>Indigenous Storytelling Night</td>
+            <td>Indigenous elders, leaders, and activists share traditional knowledge and perspectives on the Arctic</td>
+            <td>Virtual, accessible worldwide</td>
+            <td>Monthly, on the third Thursday of each month</td>
+            <td>Anyone can attend by registering online</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+  <div class="container mt-5">
+    <h1 class="mb-5 text-center">Join us</h1>
+    <form class="d-flex flex-column gap-3 mb-5">
       <div class="row row-cols-md-2 row-cols-1 g-3">
         <div class="col">
           <input type="text" class="form-control" placeholder="Name" aria-label="Name">
