@@ -14,74 +14,74 @@
 <body>
     <!-- Navbar --> 
     <nav class="bg-primary">
-        <div class="mx-auto max-w-7xl px-4 sm:px-6 md:px-10 lg:px-14">
-          <div class="relative flex h-20 items-center justify-between">
-            <!-- Mobile nav button --> 
-            <div class="sm:hidden">
-                <button type="button" class="rounded-md px-2 py-1 hover:ring-2 hover:ring-inset hover:ring-white focus:ring-2 focus:ring-inset focus:ring-white" aria-controls="mobile-menu" aria-expanded="false"
-                  onclick="showMobileNav()">
-                  <svg class="block size-10 stroke-white" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="" aria-hidden="true" data-slot="icon">
-                    <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
-                  </svg>
-                </button>
-              </div>
-              <!-- Desktop left side links --> 
-              <div class="hidden sm:block">
-                <div class="flex space-x-4 md:space-x-6 lg:space-x-8 xl:space-x-10 2xl:space-x-12">
-                  <a href="/tailwind/index.html" class="rounded-md px-3 py-2 text-xl font-normal text-white">Home</a>
-                  <a href="/tailwind/form.html" class="rounded-md px-3 py-2 text-xl font-normal text-white">Form</a>
-                  <div class="relative">
-                    <button class="flex flex-row items-center space-x-2 rounded-md px-3 py-2 text-xl font-normal text-white" id="dropdown-link" aria-expanded="false" aria-haspopup="true"
-                      onclick="showMenu()">
-                      <p>Menu Link</p>
-                      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="white" class="size-5">
-                        <path stroke-linecap="round" stroke-linejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5" />
-                      </svg>
-                    </button>
-                    <div class="absolute left-0 z-10 mt-2 ml-2 w-48 rounded-md bg-white py-1 shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none
-                        opacity-0 open:opacity-100 scale-95 open:scale-100 transition ease-in open:ease-out duration-75 open:duration-100"
-                        id="dropdown-menu" role="menu" aria-orientation="vertical" aria-labelledby="dropdown-link" tabindex="-1">
-                        <a href="" class="block px-4 py-2 text-lg text-black" role="menuitem" tabindex="-1" id="dropdown-menu-item-0">Link</a>
-                        <a href="" class="block px-4 py-2 text-lg text-black" role="menuitem" tabindex="-1" id="dropdown-menu-item-1">Another Link</a>
-                        <a href="" class="block px-4 py-2 text-lg text-black" role="menuitem" tabindex="-1" id="dropdown-menu-item-2">Third Link</a>
-                    </div>
+      <div class="mx-auto max-w-7xl px-4 sm:px-6 md:px-10 lg:px-14">
+        <div class="relative flex h-20 items-center justify-between">
+          <!-- Mobile nav button --> 
+          <div class="sm:hidden">
+              <button type="button" class="rounded-md px-2 py-1 hover:ring-2 hover:ring-inset hover:ring-white focus:ring-2 focus:ring-inset focus:ring-white" aria-controls="mobile-menu" aria-expanded="false"
+                onclick="showMobileNav()">
+                <svg class="block size-10 stroke-white" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="" aria-hidden="true" data-slot="icon">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+                </svg>
+              </button>
+            </div>
+            <!-- Desktop left side links --> 
+            <div class="hidden sm:block">
+              <div class="flex space-x-6 md:space-x-10 lg:space-x-14 xl:space-x-16 2xl:space-x-20">
+                <a href="/tailwind/index.html" class="rounded-md px-3 py-2 text-2xl font-normal text-white">Home</a>
+                <a href="/tailwind/form.html" class="rounded-md px-3 py-2 text-2xl font-normal text-white">Form</a>
+                <div class="relative">
+                  <button class="flex flex-row items-center space-x-2 rounded-md px-3 py-2 text-2xl font-normal text-white" id="dropdown-link" aria-expanded="false" aria-haspopup="true"
+                    onclick="showMenu()">
+                    <p>Menu Link</p>
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="white" class="size-5">
+                      <path stroke-linecap="round" stroke-linejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5" />
+                    </svg>
+                  </button>
+                  <div class="absolute left-0 z-10 mt-2 ml-2 w-48 rounded-md bg-white py-1 shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none
+                      opacity-0 open:opacity-100 scale-95 open:scale-100 transition ease-in open:ease-out duration-75 open:duration-100"
+                      id="dropdown-menu" role="menu" aria-orientation="vertical" aria-labelledby="dropdown-link" tabindex="-1">
+                      <a href="" class="block px-4 py-2 text-lg text-black" role="menuitem" tabindex="-1" id="dropdown-menu-item-0">Link</a>
+                      <a href="" class="block px-4 py-2 text-lg text-black" role="menuitem" tabindex="-1" id="dropdown-menu-item-1">Another Link</a>
+                      <a href="" class="block px-4 py-2 text-lg text-black" role="menuitem" tabindex="-1" id="dropdown-menu-item-2">Third Link</a>
                   </div>
                 </div>
               </div>
-            <!-- Desktop right side links --> 
-            <div class="flex items-center space-x-4 md:space-x-6 lg:space-x-8 xl:space-x-10 2xl:space-x-12">
-              <a href="" class="hidden sm:block rounded-md px-3 py-2 text-xl font-normal text-white">Final Link</a>
-                <svg class="size-12 stroke-secondary" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="">
-                  <path stroke-linecap="round" stroke-linejoin="round" d="M17.982 18.725A7.488 7.488 0 0 0 12 15.75a7.488 7.488 0 0 0-5.982 2.975m11.963 0a9 9 0 1 0-11.963 0m11.963 0A8.966 8.966 0 0 1 12 21a8.966 8.966 0 0 1-5.982-2.275M15 9.75a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z" />
-                </svg>
             </div>
+          <!-- Desktop right side links --> 
+          <div class="flex items-center space-x-6 md:space-x-10 lg:space-x-14 xl:space-x-16 2xl:space-x-20">
+            <a href="" class="hidden sm:block rounded-md px-3 py-2 text-2xl font-normal text-white">Final Link</a>
+              <svg class="bg-secondary size-11 fill-secondary stroke-black rounded-full" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M17.982 18.725A7.488 7.488 0 0 0 12 15.75a7.488 7.488 0 0 0-5.982 2.975m11.963 0a9 9 0 1 0-11.963 0m11.963 0A8.966 8.966 0 0 1 12 21a8.966 8.966 0 0 1-5.982-2.275M15 9.75a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z" />
+              </svg>
           </div>
         </div>
-        <!-- Mobile nav --> 
-        <div class="sm:hidden opacity-0 open:opacity-100 h-0 open:h-full transition ease-out duration-0 open:duration-75" id="mobile-nav">
-          <div class="space-y-1 px-3 pb-4">
-            <a href="/tailwind/index.html" class="block rounded-md px-3 py-2 text-lg font-normal text-white">Home</a>
-            <a href="/tailwind/form.html" class="block rounded-md px-3 py-2 text-lg font-normal text-white">Form</a>
-            <div class="relative">
-              <button class="flex flex-row items-center space-x-2 rounded-md px-3 py-2 text-lg font-normal text-white" id="mobile-dropdown-link" aria-expanded="false" aria-haspopup="true"
-                onclick="showMobileMenu()">
-                <p>Menu Link</p>
-                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="white" class="size-5">
-                  <path stroke-linecap="round" stroke-linejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5" />
-                </svg>
-              </button>
-              <div class="absolute left-0 z-10 mt-2 ml-2 w-48 rounded-md bg-white py-1 shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none
-                  opacity-0 open:opacity-100 scale-95 open:scale-100 transition ease-in open:ease-out duration-75 open:duration-100"
-                  id="mobile-dropdown-menu" role="menu" aria-orientation="vertical" aria-labelledby="dropdown-link" tabindex="-1">
-                  <a href="" class="block px-4 py-2 text-lg text-black" role="menuitem" tabindex="-1" id="dropdown-menu-item-0">Link</a>
-                  <a href="" class="block px-4 py-2 text-lg text-black" role="menuitem" tabindex="-1" id="dropdown-menu-item-1">Another Link</a>
-                  <a href="" class="block px-4 py-2 text-lg text-black" role="menuitem" tabindex="-1" id="dropdown-menu-item-2">Third Link</a>
-              </div>
+      </div>
+      <!-- Mobile nav --> 
+      <div class="sm:hidden opacity-0 open:opacity-100 h-0 open:h-full transition ease-out duration-0 open:duration-75" id="mobile-nav">
+        <div class="space-y-1 px-3 pb-4">
+          <a href="/tailwind/index.html" class="block rounded-md px-3 py-2 text-xl font-normal text-white">Home</a>
+          <a href="/tailwind/form.html" class="block rounded-md px-3 py-2 text-xl font-normal text-white">Form</a>
+          <div class="relative">
+            <button class="flex flex-row items-center space-x-2 rounded-md px-3 py-2 text-xl font-normal text-white" id="mobile-dropdown-link" aria-expanded="false" aria-haspopup="true"
+              onclick="showMobileMenu()">
+              <p>Menu Link</p>
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="white" class="size-5">
+                <path stroke-linecap="round" stroke-linejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5" />
+              </svg>
+            </button>
+            <div class="absolute left-0 z-10 mt-2 ml-2 w-48 rounded-md bg-white py-1 shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none
+                opacity-0 open:opacity-100 scale-95 open:scale-100 transition ease-in open:ease-out duration-75 open:duration-100"
+                id="mobile-dropdown-menu" role="menu" aria-orientation="vertical" aria-labelledby="dropdown-link" tabindex="-1">
+                <a href="" class="block px-4 py-2 text-lg text-black" role="menuitem" tabindex="-1" id="dropdown-menu-item-0">Link</a>
+                <a href="" class="block px-4 py-2 text-lg text-black" role="menuitem" tabindex="-1" id="dropdown-menu-item-1">Another Link</a>
+                <a href="" class="block px-4 py-2 text-lg text-black" role="menuitem" tabindex="-1" id="dropdown-menu-item-2">Third Link</a>
             </div>
-            <a href="" class="block rounded-md px-3 py-2 text-lg font-normal text-white">Final Link</a>
           </div>
+          <a href="" class="block rounded-md px-3 py-2 text-xl font-normal text-white">Final Link</a>
         </div>
-      </nav>
+      </div>
+    </nav>
     <div class="container mx-auto mt-10 px-10" >
       <h1 class="text-4xl font-serif font-extrabold italic my-10 text-center">Join us</h1>
       <form class="space-y-4">
