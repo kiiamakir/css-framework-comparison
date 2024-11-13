@@ -11,6 +11,7 @@
     <link href="styles/foundation-icons.css" rel="stylesheet">
     <link href="styles/font.css" rel="stylesheet">
     <link href="styles/navbar.css" rel="stylesheet">
+    <link href="styles/form.css" rel="stylesheet">
     <title>Document</title>
 </head>
 <body>
@@ -44,7 +45,45 @@
       </div>
     </div>
   </nav>
-  <h1>Join us</h1>
+  <div class="grid-container form-container">
+    <h1 class="text-center">Join us</h1>
+    <form class="grid-x grid-padding-x">
+        <div class="cell small-12 medium-6">
+            <label>
+                <input type="text" placeholder="Name" aria-label="Name">
+            </label>
+        </div>
+        <div class="cell small-12 medium-6">
+            <label>
+                <input type="text" placeholder="Phone number" aria-label="Phone number">
+            </label>
+        </div>
+        <div class="cell small-12 medium-6">
+            <label>
+                <input type="email" placeholder="Email" aria-label="Email">
+            </label>
+        </div>
+        <div class="cell small-12 medium-6">
+            <label>
+                <input type="text" placeholder="Address" aria-label="Address">
+            </label>
+        </div>
+        <div class="cell small-12">
+            <label>
+                <textarea placeholder="Tell us how you want to make a difference" rows="4"></textarea>
+            </label>
+        </div>
+        <div class="cell small-12">
+            <input id="privacyPolicy" type="checkbox" class="form-check">
+            <label for="privacyPolicy" class="form-check-label">
+                I accept the Privacy Policy
+            </label>
+        </div>
+        <div class="cell small-12 text-center">
+            <button type="submit" class="button large">Send</button>
+        </div>
+    </form>
+</div>
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/foundation-sites@6.6.3/dist/js/foundation.min.js"></script>
   <script>
