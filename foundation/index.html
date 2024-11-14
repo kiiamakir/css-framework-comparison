@@ -9,94 +9,102 @@
     <link href="https://fonts.googleapis.com/css2?family=Sansita:ital,wght@0,400;0,700;0,800;0,900;1,400;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles/custom.css">
     <link href="styles/foundation-icons.css" rel="stylesheet">
+    <link href="styles/body.css" rel="stylesheet">
     <link href="styles/font.css" rel="stylesheet">
     <link href="styles/navbar.css" rel="stylesheet">
     <link href="styles/grid.css" rel="stylesheet">
     <title>Document</title>
 </head>
 <body>
-  <nav>
-    <div class="title-bar" data-responsive-toggle="example-menu" data-hide-for="medium">
-      <button class="menu-icon" type="button" data-toggle="example-menu" id="menuToggle"></button>
-      <span class="badge secondary"><i class="fi-torso"></i></span>
-    </div>
-    <div class="top-bar" id="example-menu">
-      <div class="top-bar-left">
-        <ul class="menu" id="nav-menu">
-          <li><a class="nav-link" href="/foundation/index.html">Home</a></li>
-          <li><a class="nav-link" href="/foundation/form.html">Form</a></li>
-          <ul class="dropdown menu" data-dropdown-menu>
-            <li class="is-dropdown-submenu-parent">
-              <a class="nav-link" href="">Menu Link</a>
-              <ul class="menu vertical" id="dropdown-menu">
-                  <li><a class="dropdown-link" href="">Link</a></li>
-                  <li><a class="dropdown-link" href="">Another Link</a></li>
-                  <li><a class="dropdown-link" href="">Third Link</a></li>
-              </ul>
-            </li>
-          </ul>
-        </ul>
-      </div>
-      <div class="top-bar-right">
-        <ul class="menu" id="nav-menu">
-          <li><a class="nav-link" href="">Final Link</a></li>
-          <li class="show-for-medium"><span class="badge secondary"><i class="fi-torso"></i></span></li>
-        </ul>
-      </div>
-    </div>
-  </nav>
-  <div class="title">
-    <h1 class="text-center">Polar Preserve</h1>
-  </div>
-  <!-- Grid -->
-  <div class="grid-container text-center">
-    <div class="grid-x">
-      <div class="cell large-6 medium-8 small-12">
-        <div class="card">
-          <img src="../../images/antarctica.png" class="card-img" alt="Photo of Antarctica">
-          <div class="card-section card-body-lightblue">
-            <p class="card-text">Combat climat change</p>
-          </div>
-        </div>
-      </div>
-      <div class="cell large-6 medium-4">
-        <div class="grid-x h-50-except-md">
-          <div class="cell large-6 medium-12 small-6 h-100">
-            <div class="card h-100">
-              <div class="card-section card-body-lightorange">
-                <p class="card-text">Advance scientific research</p>
-              </div>
-            </div>
-          </div>
-          <div class="cell large-6 medium-12 small-6 h-100">
-            <div class="card h-100">
-              <div class="card-section card-body-blue">
-                <p class="card-text">Raise global awareness</p>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="grid-x h-50-except-md">
-          <div class="cell large-6 medium-12 small-6 h-100">
-            <div class="card h-100">
-              <div class="card-section card-body-blue">
-                <p class="card-text">Support indigenous communities</p>
-              </div>
-            </div>
-          </div>
-          <div class="cell large-6 medium-12 small-6 h-100 image-column">
-            <div class="card h-100">
-              <img src="../../images/polar-bear.png" class="card-img" alt="Photo of polar bear">
-              <div class="card-section card-text-section card-body-lightblue ">
-                <p class="card-text">Protect wildlife</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
 
+  <header>
+    <!-- Navbar -->
+    <nav>
+      <div class="title-bar" data-responsive-toggle="example-menu" data-hide-for="medium">
+        <button class="menu-icon" type="button" data-toggle="example-menu" id="menuToggle"></button>
+        <span class="badge secondary"><i class="fi-torso"></i></span>
+      </div>
+      <div class="top-bar" id="example-menu">
+        <div class="top-bar-left">
+          <ul class="menu" id="nav-menu">
+            <li><a class="nav-link" href="/foundation/index.html">Home</a></li>
+            <li><a class="nav-link" href="/foundation/form.html">Form</a></li>
+            <ul class="dropdown menu" data-dropdown-menu>
+              <li class="is-dropdown-submenu-parent">
+                <a class="nav-link" href="">Menu Link</a>
+                <ul class="menu vertical" id="dropdown-menu">
+                    <li><a class="dropdown-link" href="">Link</a></li>
+                    <li><a class="dropdown-link" href="">Another Link</a></li>
+                    <li><a class="dropdown-link" href="">Third Link</a></li>
+                </ul>
+              </li>
+            </ul>
+          </ul>
+        </div>
+        <div class="top-bar-right">
+          <ul class="menu" id="nav-menu">
+            <li><a class="nav-link" href="">Final Link</a></li>
+            <li class="show-for-medium"><span class="badge secondary"><i class="fi-torso"></i></span></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <div class="title">
+      <h1 class="text-center">Polar Preserve</h1>
+    </div>
+    <!-- Grid -->
+    <div class="grid-container text-center">
+      <div class="grid-x">
+        <div class="cell large-6 medium-8 small-12">
+          <div class="card">
+            <img src="../../images/antarctica.png" class="card-img" alt="Photo of Antarctica">
+            <div class="card-section card-body-lightblue">
+              <p class="card-text">Combat climat change</p>
+            </div>
+          </div>
+        </div>
+        <div class="cell large-6 medium-4">
+          <div class="grid-x h-50-except-md">
+            <div class="cell large-6 medium-12 small-6 h-100">
+              <div class="card h-100">
+                <div class="card-section card-body-lightorange">
+                  <p class="card-text">Advance scientific research</p>
+                </div>
+              </div>
+            </div>
+            <div class="cell large-6 medium-12 small-6 h-100">
+              <div class="card h-100">
+                <div class="card-section card-body-blue">
+                  <p class="card-text">Raise global awareness</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="grid-x h-50-except-md">
+            <div class="cell large-6 medium-12 small-6 h-100">
+              <div class="card h-100">
+                <div class="card-section card-body-blue">
+                  <p class="card-text">Support indigenous communities</p>
+                </div>
+              </div>
+            </div>
+            <div class="cell large-6 medium-12 small-6 h-100 image-column">
+              <div class="card h-100">
+                <img src="../../images/polar-bear.png" class="card-img" alt="Photo of polar bear">
+                <div class="card-section card-text-section card-body-lightblue ">
+                  <p class="card-text">Protect wildlife</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+  
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/foundation-sites@6.6.3/dist/js/foundation.min.js"></script>
   <script>

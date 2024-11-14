@@ -14,14 +14,16 @@
     <link href="styles/footer.css" rel="stylesheet">
     <title>Document</title>
 </head>
-<body>
-  <div class="bg-primary">
-    <nav class="navbar navbar-expand-sm navbar-dark mx-auto py-3 px-3 px-sm-4 px-md-5">
+<body class="bg-primary">
+  
+  <header>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-sm navbar-dark mx-auto py-3 px-3 px-sm-4 px-md-6 px-lg-8 px-xl-9">
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <div class="navbar-nav mr-auto column-gap-4 column-gap-md-5">
+        <div class="navbar-nav mr-auto column-gap-4 column-gap-md-6 column-gap-lg-8 column-gap-xl-9">
           <a class="nav-link text-white" href="/bootstrap/index.html">Home</a>
           <a class="nav-link text-white" href="/bootstrap/form.html">Form</a>
           <div class="nav-item dropdown">
@@ -36,7 +38,7 @@
           </div>
         </div>
       </div>
-      <div class="navbar-nav column-gap-4 column-gap-md-5 row-gap-2">
+      <div class="navbar-nav column-gap-4 column-gap-md-5 column-gap-md-6 column-gap-lg-8 column-gap-xl-9 row-gap-2 align-items-start align-items-sm-center">
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <a class="nav-link text-white" href="">Final Link</a>
         </div>
@@ -46,36 +48,40 @@
         </svg>
       </div>
     </nav>
-  </div>
-  
-  <div class="container my-5">
-    <h1 class="mb-4 text-center">Join us</h1>
-    <form class="d-flex flex-column gap-3">
-      <div class="row row-cols-md-2 row-cols-1 g-3">
-        <div class="col">
-          <input type="text" class="form-control" placeholder="Name" aria-label="Name">
-        </div>
-        <div class="col">
-          <input type="text" class="form-control" placeholder="Phone number" aria-label="Phone number">
-        </div>
-        <div class="col">
-          <input type="email" class="form-control" placeholder="Email" aria-label="Email">
-        </div>
-          <div class="col">
-            <input type="text" class="form-control" placeholder="Address" aria-label="Address">
-        </div>
-      </div>
-      <textarea class="form-control" placeholder="Tell us how you want to make a difference" rows="4"></textarea>
-      <div class="form-check">
-        <input class="form-check-input" type="checkbox" id="gridCheck">
-        <label class="form-check-label" for="gridCheck">
-          I accept the Privacy Policy
-        </label>
-      </div>
-      <button type="submit" class="btn btn-primary align-self-center">Send</button>
-    </form>
-  </div>
+  </header>
 
+  <main class="bg-white py-5">
+    <!-- Form -->
+    <div class="container">
+      <h1 class="mb-4 text-center">Join us</h1>
+      <form class="d-flex flex-column gap-3">
+        <div class="row row-cols-md-2 row-cols-1 g-3">
+          <div class="col">
+            <input type="text" class="form-control" placeholder="Name" aria-label="Name">
+          </div>
+          <div class="col">
+            <input type="text" class="form-control" placeholder="Phone number" aria-label="Phone number">
+          </div>
+          <div class="col">
+            <input type="email" class="form-control" placeholder="Email" aria-label="Email">
+          </div>
+            <div class="col">
+              <input type="text" class="form-control" placeholder="Address" aria-label="Address">
+          </div>
+        </div>
+        <textarea class="form-control" placeholder="Tell us how you want to make a difference" rows="4"></textarea>
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" id="gridCheck">
+          <label class="form-check-label" for="gridCheck">
+            I accept the Privacy Policy
+          </label>
+        </div>
+        <button type="submit" class="btn btn-primary align-self-center">Send</button>
+      </form>
+    </div>
+  </main>
+
+  <!-- Footer -->
   <footer class="bg-primary w-100 d-flex flex-column text-white align-items-center py-7 gap-5">
     <div class="d-flex flex-column flex-sm-row align-items-center align-items-sm-start row-gap-4 column-gap-6 column-gap-md-9">
       <div class="bg-primary-light d-flex flex-column rounded-2 align-items-center justify-content-center" id="logo">

@@ -11,43 +11,45 @@
     <script src="scripts/navbar.js"></script>
     <title>Document</title>
 </head>
-<body>
-    <!-- Navbar --> 
-    <nav class="bg-primary">
-      <div class="mx-auto max-w-7xl px-4 sm:px-6 md:px-10 lg:px-14">
+<body class="bg-primary">
+
+  <header>
+    <!-- Navbar -->
+    <nav>
+      <div class="mx-auto max-w-screen-2xl px-4 sm:px-6 md:px-10 lg:px-16">
         <div class="relative flex h-20 items-center justify-between">
           <!-- Mobile nav button --> 
           <div class="sm:hidden">
-              <button type="button" class="rounded-md px-2 py-1 hover:ring-2 hover:ring-inset hover:ring-white focus:ring-2 focus:ring-inset focus:ring-white" aria-controls="mobile-menu" aria-expanded="false"
-                onclick="showMobileNav()">
-                <svg class="block size-10 stroke-white" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="" aria-hidden="true" data-slot="icon">
-                  <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
-                </svg>
-              </button>
-            </div>
-            <!-- Desktop left side links --> 
-            <div class="hidden sm:block">
-              <div class="flex space-x-6 md:space-x-10 lg:space-x-14 xl:space-x-16 2xl:space-x-20">
-                <a href="/tailwind/index.html" class="rounded-md px-3 py-2 text-2xl font-normal text-white">Home</a>
-                <a href="/tailwind/form.html" class="rounded-md px-3 py-2 text-2xl font-normal text-white">Form</a>
-                <div class="relative">
-                  <button class="flex flex-row items-center space-x-2 rounded-md px-3 py-2 text-2xl font-normal text-white" id="dropdown-link" aria-expanded="false" aria-haspopup="true"
-                    onclick="showMenu()">
-                    <p>Menu Link</p>
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="white" class="size-5">
-                      <path stroke-linecap="round" stroke-linejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5" />
-                    </svg>
-                  </button>
-                  <div class="absolute left-0 z-10 mt-2 ml-2 w-48 rounded-md bg-white py-1 shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none
-                      opacity-0 open:opacity-100 scale-95 open:scale-100 transition ease-in open:ease-out duration-75 open:duration-100"
-                      id="dropdown-menu" role="menu" aria-orientation="vertical" aria-labelledby="dropdown-link" tabindex="-1">
-                      <a href="" class="block px-4 py-2 text-lg text-black" role="menuitem" tabindex="-1" id="dropdown-menu-item-0">Link</a>
-                      <a href="" class="block px-4 py-2 text-lg text-black" role="menuitem" tabindex="-1" id="dropdown-menu-item-1">Another Link</a>
-                      <a href="" class="block px-4 py-2 text-lg text-black" role="menuitem" tabindex="-1" id="dropdown-menu-item-2">Third Link</a>
-                  </div>
+            <button type="button" class="rounded-md px-2 py-1 hover:ring-2 hover:ring-inset hover:ring-white focus:ring-2 focus:ring-inset focus:ring-white" aria-controls="mobile-menu" aria-expanded="false"
+              onclick="showMobileNav()">
+              <svg class="block size-10 stroke-white" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="" aria-hidden="true" data-slot="icon">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+              </svg>
+            </button>
+          </div>
+          <!-- Desktop left side links --> 
+          <div class="hidden sm:block">
+            <div class="flex space-x-6 md:space-x-10 lg:space-x-14 xl:space-x-16 2xl:space-x-20">
+              <a href="/tailwind/index.html" class="rounded-md px-3 py-2 text-2xl font-normal text-white">Home</a>
+              <a href="/tailwind/form.html" class="rounded-md px-3 py-2 text-2xl font-normal text-white">Form</a>
+              <div class="relative">
+                <button class="flex flex-row items-center space-x-2 rounded-md px-3 py-2 text-2xl font-normal text-white" id="dropdown-link" aria-expanded="false" aria-haspopup="true"
+                  onclick="showMenu()">
+                  <p>Menu Link</p>
+                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="white" class="size-5">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5" />
+                  </svg>
+                </button>
+                <div class="absolute left-0 z-10 mt-2 ml-2 w-48 rounded-md bg-white py-1 shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none
+                  opacity-0 open:opacity-100 scale-95 open:scale-100 transition ease-in open:ease-out duration-75 open:duration-100"
+                  id="dropdown-menu" role="menu" aria-orientation="vertical" aria-labelledby="dropdown-link" tabindex="-1">
+                  <a href="" class="block px-4 py-2 text-lg text-black" role="menuitem" tabindex="-1" id="dropdown-menu-item-0">Link</a>
+                  <a href="" class="block px-4 py-2 text-lg text-black" role="menuitem" tabindex="-1" id="dropdown-menu-item-1">Another Link</a>
+                  <a href="" class="block px-4 py-2 text-lg text-black" role="menuitem" tabindex="-1" id="dropdown-menu-item-2">Third Link</a>
                 </div>
               </div>
             </div>
+          </div>
           <!-- Desktop right side links --> 
           <div class="flex items-center space-x-6 md:space-x-10 lg:space-x-14 xl:space-x-16 2xl:space-x-20">
             <a href="" class="hidden sm:block rounded-md px-3 py-2 text-2xl font-normal text-white">Final Link</a>
@@ -71,45 +73,51 @@
               </svg>
             </button>
             <div class="absolute left-0 z-10 mt-2 ml-2 w-48 rounded-md bg-white py-1 shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none
-                opacity-0 open:opacity-100 scale-95 open:scale-100 transition ease-in open:ease-out duration-75 open:duration-100"
-                id="mobile-dropdown-menu" role="menu" aria-orientation="vertical" aria-labelledby="dropdown-link" tabindex="-1">
-                <a href="" class="block px-4 py-2 text-lg text-black" role="menuitem" tabindex="-1" id="dropdown-menu-item-0">Link</a>
-                <a href="" class="block px-4 py-2 text-lg text-black" role="menuitem" tabindex="-1" id="dropdown-menu-item-1">Another Link</a>
-                <a href="" class="block px-4 py-2 text-lg text-black" role="menuitem" tabindex="-1" id="dropdown-menu-item-2">Third Link</a>
+              opacity-0 open:opacity-100 scale-95 open:scale-100 transition ease-in open:ease-out duration-75 open:duration-100"
+              id="mobile-dropdown-menu" role="menu" aria-orientation="vertical" aria-labelledby="dropdown-link" tabindex="-1">
+              <a href="" class="block px-4 py-2 text-lg text-black" role="menuitem" tabindex="-1" id="dropdown-menu-item-0">Link</a>
+              <a href="" class="block px-4 py-2 text-lg text-black" role="menuitem" tabindex="-1" id="dropdown-menu-item-1">Another Link</a>
+              <a href="" class="block px-4 py-2 text-lg text-black" role="menuitem" tabindex="-1" id="dropdown-menu-item-2">Third Link</a>
             </div>
           </div>
           <a href="" class="block rounded-md px-3 py-2 text-xl font-normal text-white">Final Link</a>
         </div>
       </div>
     </nav>
-    <div class="container mx-auto mt-10 px-10" >
-      <h1 class="text-4xl font-serif font-extrabold italic my-10 text-center">Join us</h1>
+  </header>
+
+  <main class="bg-white py-10">
+    <!-- Form -->
+    <div class="container mx-auto px-10">
+      <h1 class="text-4xl font-serif font-extrabold italic mb-10 text-center">Join us</h1>
       <form class="space-y-4">
-          <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
-              <div>
-                  <input type="text" placeholder="Name" aria-label="Name" class="w-full px-6 py-3 bg-primary-lighter rounded-lg focus:ring-1 focus:ring-primary-light focus:outline-none text-lg placeholder-gray-500">
-              </div>
-              <div>
-                  <input type="text" placeholder="Phone number" aria-label="Phone number" class="w-full px-6 py-3 bg-primary-lighter rounded-lg focus:ring-1 focus:ring-primary-light focus:outline-none text-lg placeholder-gray-500">
-              </div>
-              <div>
-                  <input type="email" placeholder="Email" aria-label="Email" class="w-full px-6 py-3 bg-primary-lighter rounded-lg focus:ring-1 focus:ring-primary-light focus:outline-none text-lg placeholder-gray-500">
-              </div>
-              <div>
-                  <input type="text" placeholder="Address" aria-label="Address" class="w-full px-6 py-3 bg-primary-lighter rounded-lg focus:ring-1 focus:ring-primary-light focus:outline-none text-lg placeholder-gray-500">
-              </div>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+          <div>
+            <input type="text" placeholder="Name" aria-label="Name" class="w-full px-6 py-3 bg-primary-lighter rounded-lg focus:ring-1 focus:ring-primary-light focus:outline-none text-lg placeholder-gray-500">
           </div>
           <div>
-              <textarea placeholder="Tell us how you want to make a difference" rows="4" class="w-full px-6 py-3 bg-primary-lighter rounded-lg focus:ring-1 focus:ring-primary-light focus:outline-none text-lg placeholder-gray-500"></textarea>
+            <input type="text" placeholder="Phone number" aria-label="Phone number" class="w-full px-6 py-3 bg-primary-lighter rounded-lg focus:ring-1 focus:ring-primary-light focus:outline-none text-lg placeholder-gray-500">
           </div>
-          <div class="flex items-center space-x-2">
-              <input type="checkbox" id="privacyPolicy" class="h-4 w-4 accent-secondary-darker bg-secondary">
-              <label for="privacyPolicy" class="text-lg">I accept the Privacy Policy</label>
+          <div>
+            <input type="email" placeholder="Email" aria-label="Email" class="w-full px-6 py-3 bg-primary-lighter rounded-lg focus:ring-1 focus:ring-primary-light focus:outline-none text-lg placeholder-gray-500">
           </div>
-          <div class="text-center">
-              <button type="submit" class="px-14 py-2 text-2xl text-white bg-primary rounded-lg">Send</button>
+          <div>
+            <input type="text" placeholder="Address" aria-label="Address" class="w-full px-6 py-3 bg-primary-lighter rounded-lg focus:ring-1 focus:ring-primary-light focus:outline-none text-lg placeholder-gray-500">
           </div>
+        </div>
+        <div>
+          <textarea placeholder="Tell us how you want to make a difference" rows="4" class="w-full px-6 py-3 bg-primary-lighter rounded-lg focus:ring-1 focus:ring-primary-light focus:outline-none text-lg placeholder-gray-500"></textarea>
+        </div>
+        <div class="flex items-center space-x-2">
+          <input type="checkbox" id="privacyPolicy" class="h-4 w-4 accent-secondary-darker bg-secondary">
+          <label for="privacyPolicy" class="text-lg">I accept the Privacy Policy</label>
+        </div>
+        <div class="text-center">
+          <button type="submit" class="px-14 py-2 text-2xl text-white bg-primary rounded-lg">Send</button>
+        </div>
       </form>
-  </div>
+    </div>
+  </main>
+
 </body>
 </html>

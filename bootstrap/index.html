@@ -16,8 +16,10 @@
     <script src="scripts/modal.js"></script>
     <title>Document</title>
 </head>
-<body>
-  <div class="bg-primary">
+<body class="bg-primary">
+  
+  <header>
+    <!-- Navbar -->
     <nav class="navbar navbar-expand-sm navbar-dark mx-auto py-3 px-3 px-sm-4 px-md-6 px-lg-8 px-xl-9">
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -48,95 +50,96 @@
         </svg>
       </div>
     </nav>
-  </div>
+  </header>
 
-  <!-- Grid -->
-  <div class="container text-center pt-5">
-    <h1 class="mb-4 text-center">Polar Preserve</h1>
-    <div class="row h-100">
-      <div class="col-lg-6 col-md-8 col-sm-12 col-12 p-2">
-        <div class="card h-100">
-          <img src="../../images/antarctica.png" class="card-img" alt="Glacier in Antarctica">
-          <div class="card-body bg-primary-lighter">
-            <p class="card-text">Combat climat change</p>
-          </div>
-        </div>
-      </div>
-      <div class="col-lg-6 col-md-4">
-        <div class="row h-auto h-sm-50 h-md-auto h-lg-50">
-          <div class="col col-lg-6 col-md-12 col-sm-6 col-12 p-2">
-            <div class="card h-100">
-              <div class="card-body bg-secondary">
-                <p class="card-text">Advance scientific research</p>
-              </div>
-            </div>
-          </div>
-          <div class="col col-lg-6 col-md-12 col-sm-6 col-12 p-2">
-            <div class="card h-100">
-              <div class="card-body bg-primary-light">
-                <p class="card-text">Raise global awareness</p>
-              </div>
+  <main class="bg-white py-5">
+    <!-- Grid -->
+    <div class="container text-center">
+      <h1 class="mb-4 text-center">Polar Preserve</h1>
+      <div class="row h-100">
+        <div class="col-lg-6 col-md-8 col-sm-12 col-12 p-2">
+          <div class="card h-100">
+            <img src="../../images/antarctica.png" class="card-img" alt="Glacier in Antarctica">
+            <div class="card-body bg-primary-lighter">
+              <p class="card-text">Combat climat change</p>
             </div>
           </div>
         </div>
-        <div class="row h-auto h-sm-50 h-md-auto h-lg-50">
-          <div class="col col-lg-6 col-md-12 col-sm-6 col-12 p-2">
-            <div class="card h-100">
-              <div class="card-body bg-primary-light">
-                <p class="card-text">Support indigenous communities</p>
+        <div class="col-lg-6 col-md-4">
+          <div class="row h-auto h-sm-50 h-md-auto h-lg-50">
+            <div class="col col-lg-6 col-md-12 col-sm-6 col-12 p-2">
+              <div class="card h-100">
+                <div class="card-body bg-secondary">
+                  <p class="card-text">Advance scientific research</p>
+                </div>
+              </div>
+            </div>
+            <div class="col col-lg-6 col-md-12 col-sm-6 col-12 p-2">
+              <div class="card h-100">
+                <div class="card-body bg-primary-light">
+                  <p class="card-text">Raise global awareness</p>
+                </div>
               </div>
             </div>
           </div>
-          <div class="col col-lg-6 col-md-12 col-sm-6 col-12 image-column p-2">
-            <div class="card h-100">
-              <img src="../../images/polar-bear.png" class="card-img" alt="Polar bear walking on ice">
-              <div class="card-body card-text-body bg-primary-lighter">
-                <p class="card-text">Protect wildlife</p>
+          <div class="row h-auto h-sm-50 h-md-auto h-lg-50">
+            <div class="col col-lg-6 col-md-12 col-sm-6 col-12 p-2">
+              <div class="card h-100">
+                <div class="card-body bg-primary-light">
+                  <p class="card-text">Support indigenous communities</p>
+                </div>
+              </div>
+            </div>
+            <div class="col col-lg-6 col-md-12 col-sm-6 col-12 image-column p-2">
+              <div class="card h-100">
+                <img src="../../images/polar-bear.png" class="card-img" alt="Polar bear walking on ice">
+                <div class="card-body card-text-body bg-primary-lighter">
+                  <p class="card-text">Protect wildlife</p>
+                </div>
               </div>
             </div>
           </div>
         </div>
       </div>
     </div>
-  </div>
-  
-  <!-- Modal -->
-  <div class="d-flex justify-content-center my-5">
-    <button
-      type="button"
-      class="btn btn-secondary"
-      data-bs-toggle="modal"
-      data-bs-target="#feedbackModal"
+    <!-- Modal -->
+    <div class="d-flex justify-content-center mt-5">
+      <button
+        type="button"
+        class="btn btn-secondary"
+        data-bs-toggle="modal"
+        data-bs-target="#feedbackModal"
+      >
+        Give feedback
+      </button>
+    </div>
+    <div
+      class="modal fade"
+      id="feedbackModal"
+      tabindex="-1"
+      aria-labelledby="feedbackModalLabel"
+      aria-hidden="true"
     >
-      Give feedback
-    </button>
-  </div>
-  <div
-    class="modal fade"
-    id="feedbackModal"
-    tabindex="-1"
-    aria-labelledby="feedbackModalLabel"
-    aria-hidden="true"
-  >
-    <div class="modal-dialog modal-lg modal-dialog-centered">
-      <div class="modal-content bg-primary-light">
-        <div class="modal-body text-center py-5">
-          <h4 id="feedbackModalLabel">How satisfied are you with our website?</h4>
-          <div id="star-rating" class="d-flex justify-content-center py-2 gap-1">
-            <span class="star" data-value="1" aria-label="1 star">&#9733;</span>
-            <span class="star" data-value="2" aria-label="2 stars">&#9733;</span>
-            <span class="star" data-value="3" aria-label="3 stars">&#9733;</span>
-            <span class="star" data-value="4" aria-label="4 stars">&#9733;</span>
-            <span class="star" data-value="5" aria-label="5 stars">&#9733;</span>
+      <div class="modal-dialog modal-lg modal-dialog-centered">
+        <div class="modal-content bg-primary-light">
+          <div class="modal-body text-center py-5">
+            <h4 id="feedbackModalLabel">How satisfied are you with our website?</h4>
+            <div id="star-rating" class="d-flex justify-content-center py-2 gap-1">
+              <span class="star" data-value="1" aria-label="1 star">&#9733;</span>
+              <span class="star" data-value="2" aria-label="2 stars">&#9733;</span>
+              <span class="star" data-value="3" aria-label="3 stars">&#9733;</span>
+              <span class="star" data-value="4" aria-label="4 stars">&#9733;</span>
+              <span class="star" data-value="5" aria-label="5 stars">&#9733;</span>
+            </div>
+            <p id="thank-you-message"></p>
           </div>
-          <p id="thank-you-message"></p>
         </div>
       </div>
     </div>
-  </div>
+  </main>
 
   <!-- Footer -->
-  <footer class="bg-primary w-100 d-flex flex-column text-white align-items-center py-7 gap-5">
+  <footer class="bg-primary w-100 d-flex flex-column text-white align-items-center py-7 gap-5 min-vh-25">
     <div class="d-flex flex-column flex-sm-row align-items-center align-items-sm-start row-gap-4 column-gap-6 column-gap-md-9">
       <div class="bg-primary-light d-flex flex-column rounded-2 align-items-center justify-content-center" id="logo">
         <p class="text-black fw-bold m-0">LOGO</p>

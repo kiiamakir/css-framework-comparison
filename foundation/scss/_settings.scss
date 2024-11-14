@@ -85,7 +85,7 @@ $medium-gray: #cacaca;
 $dark-gray: #4f4f4f;
 $black: #000000;
 $white: #ffffff;
-$body-background: $white;
+$body-background: get-color(primary);
 $body-font-color: $black;
 $body-font-family: 'Inter', sans-serif;
 $body-safe-padding: false;
