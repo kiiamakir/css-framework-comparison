@@ -16,6 +16,11 @@ module.exports = {
         'success': '#306319',
         'danger': '#C11316'
       },
+      theme: {
+        fontSize: {
+          base: '1.25rem',
+        }
+      },
       fontFamily: {
         'sans': ['Inter', 'sans-serif', ...defaultTheme.fontFamily.sans],
         'serif': ['Sansita', 'serif', ...defaultTheme.fontFamily.serif],

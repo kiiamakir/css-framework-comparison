@@ -9,81 +9,91 @@
     <link href="https://fonts.googleapis.com/css2?family=Sansita:ital,wght@0,400;0,700;0,800;0,900;1,400;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles/custom.css">
     <link href="styles/foundation-icons.css" rel="stylesheet">
+    <link href="styles/body.css" rel="stylesheet">
     <link href="styles/font.css" rel="stylesheet">
     <link href="styles/navbar.css" rel="stylesheet">
     <link href="styles/form.css" rel="stylesheet">
     <title>Document</title>
 </head>
 <body>
-  <nav>
-    <div class="title-bar" data-responsive-toggle="example-menu" data-hide-for="medium">
-      <button class="menu-icon" type="button" data-toggle="example-menu" id="menuToggle"></button>
-      <span class="badge secondary"><i class="fi-torso"></i></span>
-    </div>
-    <div class="top-bar" id="example-menu">
-      <div class="top-bar-left">
-        <ul class="menu" id="nav-menu">
-          <li><a href="/foundation/index.html">Home</a></li>
-          <li><a href="/foundation/form.html">Form</a></li>
-          <ul class="dropdown menu" data-dropdown-menu>
-            <li class="is-dropdown-submenu-parent">
-              <a href="">Menu Link</a>
-              <ul class="menu vertical" id="dropdown-menu">
-                  <li><a href="">Link</a></li>
-                  <li><a href="">Another Link</a></li>
-                  <li><a href="">Third Link</a></li>
-              </ul>
-            </li>
+
+  <header>
+    <!-- Navbar -->
+    <nav>
+      <div class="title-bar" data-responsive-toggle="example-menu" data-hide-for="medium">
+        <button class="menu-icon" type="button" data-toggle="example-menu" id="menuToggle"></button>
+        <span class="badge secondary"><i class="fi-torso"></i></span>
+      </div>
+      <div class="top-bar" id="example-menu">
+        <div class="top-bar-left">
+          <ul class="menu" id="nav-menu">
+            <li><a class="nav-link" href="/foundation/index.html">Home</a></li>
+            <li><a class="nav-link" href="/foundation/form.html">Form</a></li>
+            <ul class="dropdown menu" data-dropdown-menu>
+              <li class="is-dropdown-submenu-parent">
+                <a class="nav-link" href="">Menu Link</a>
+                <ul class="menu vertical" id="dropdown-menu">
+                    <li><a class="dropdown-link" href="">Link</a></li>
+                    <li><a class="dropdown-link" href="">Another Link</a></li>
+                    <li><a class="dropdown-link" href="">Third Link</a></li>
+                </ul>
+              </li>
+            </ul>
           </ul>
-        </ul>
+        </div>
+        <div class="top-bar-right">
+          <ul class="menu" id="nav-menu">
+            <li><a class="nav-link" href="">Final Link</a></li>
+            <li class="show-for-medium"><span class="badge secondary"><i class="fi-torso"></i></span></li>
+          </ul>
+        </div>
       </div>
-      <div class="top-bar-right">
-        <ul class="menu" id="nav-menu">
-          <li><a href="">Final Link</a></li>
-          <li class="show-for-medium"><span class="badge secondary"><i class="fi-torso"></i></span></li>
-        </ul>
-      </div>
-    </div>
-  </nav>
-  <div class="grid-container form-container">
-    <h1 class="text-center">Join us</h1>
-    <form class="grid-x grid-padding-x">
+    </nav>
+  </header>
+
+  <main>
+    <!-- Form -->
+    <div class="grid-container form-container">
+      <h1 class="text-center">Join us</h1>
+      <form class="grid-x grid-padding-x">
         <div class="cell small-12 medium-6">
-            <label>
-                <input type="text" placeholder="Name" aria-label="Name">
-            </label>
+          <label>
+            <input type="text" placeholder="Name" aria-label="Name">
+          </label>
         </div>
         <div class="cell small-12 medium-6">
-            <label>
-                <input type="text" placeholder="Phone number" aria-label="Phone number">
-            </label>
+          <label>
+            <input type="text" placeholder="Phone number" aria-label="Phone number">
+          </label>
         </div>
         <div class="cell small-12 medium-6">
-            <label>
-                <input type="email" placeholder="Email" aria-label="Email">
-            </label>
+          <label>
+            <input type="email" placeholder="Email" aria-label="Email">
+          </label>
         </div>
         <div class="cell small-12 medium-6">
-            <label>
-                <input type="text" placeholder="Address" aria-label="Address">
-            </label>
+          <label>
+            <input type="text" placeholder="Address" aria-label="Address">
+          </label>
         </div>
         <div class="cell small-12">
-            <label>
-                <textarea placeholder="Tell us how you want to make a difference" rows="4"></textarea>
-            </label>
+          <label>
+            <textarea placeholder="Tell us how you want to make a difference" rows="4"></textarea>
+          </label>
         </div>
         <div class="cell small-12">
-            <input id="privacyPolicy" type="checkbox" class="form-check">
-            <label for="privacyPolicy" class="form-check-label">
-                I accept the Privacy Policy
-            </label>
+          <input id="privacyPolicy" type="checkbox" class="form-check">
+          <label for="privacyPolicy" class="form-check-label">
+            I accept the Privacy Policy
+          </label>
         </div>
         <div class="cell small-12 text-center">
-            <button type="submit" class="button large">Send</button>
+          <button type="submit" class="button large">Send</button>
         </div>
-    </form>
-</div>
+      </form>
+    </div>
+  </main>
+
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/foundation-sites@6.6.3/dist/js/foundation.min.js"></script>
   <script>

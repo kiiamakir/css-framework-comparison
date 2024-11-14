@@ -1,0 +1,9 @@
+#star-rating .star {
+  font-size: 3rem;
+  cursor: pointer;
+  color: white;
+}
+  
+#star-rating .star.selected {
+  color: gold;
+}
