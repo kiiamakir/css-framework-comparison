@@ -1,0 +1,40 @@
+.button {
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+#star-rating .star {
+  font-size: 3rem;
+  cursor: pointer;
+  color: white;
+}
+
+#star-rating .star.selected {
+  color: gold;
+}
+
+.custom-modal {
+  background-color: #aabee1;
+  border-radius: 0.5rem;
+  border-color: #aabee1;
+  margin-top: 2rem;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+.star-ratings {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+@media only screen and (max-width: 640px) {
+  .custom-modal {
+    width: 80vw;
+    max-width: 80vw;
+    height: auto !important;
+    max-height: 80vh !important;
+    margin: auto;
+    padding: 1rem;
+    margin-top: 80px;
+  }
+}
