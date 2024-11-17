@@ -1,0 +1,9 @@
+
+thead th {
+    text-align: center;
+}
+
+.table-container {
+    overflow-x: scroll;
+    text-align: center;
+}
