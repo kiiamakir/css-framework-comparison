@@ -4,9 +4,9 @@
 }
 
 #logo {
-    font-size: 40px;
-    height: 70px;
-    width: 140px;
+    font-size: 50px;
+    height: 80px;
+    width: 180px;
 }
 
 #divider {
@@ -18,16 +18,16 @@
     width: 80%;
 }
 
-/* Small devices (landscape phones, 576px and up) */
-@media (min-width: 576px) { 
-    #divider {
-        width: 530px;
-    }
-}
-
 /* Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) { 
     #divider {
-        width: 640px;
+        width: 615px;
     }
- }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+    #divider {
+        width: 700px;
+    }
+}
