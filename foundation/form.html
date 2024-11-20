@@ -14,6 +14,7 @@
     <link href="styles/navbar.css" rel="stylesheet">
     <link href="styles/form.css" rel="stylesheet">
     <link href="styles/table.css" rel="stylesheet">
+    <link href="styles/footer.css" rel="stylesheet">
     <title>Document</title>
 </head>
 <body>
@@ -23,7 +24,7 @@
     <nav>
       <div class="title-bar" data-responsive-toggle="example-menu" data-hide-for="medium">
         <button class="menu-icon" type="button" data-toggle="example-menu" id="menuToggle"></button>
-        <span class="badge secondary"><i class="fi-torso"></i></span>
+        <span class="badge secondary"><i class="fi-torso person-icon"></i></span>
       </div>
       <div class="top-bar" id="example-menu">
         <div class="top-bar-left">
@@ -45,7 +46,7 @@
         <div class="top-bar-right">
           <ul class="menu" id="nav-menu">
             <li><a class="nav-link" href="">Final Link</a></li>
-            <li class="show-for-medium"><span class="badge secondary"><i class="fi-torso"></i></span></li>
+            <li class="show-for-medium"><span class="badge secondary"><i class="fi-torso person-icon"></i></span></li>
           </ul>
         </div>
       </div>
@@ -55,7 +56,7 @@
   <main>
      <!-- Table -->
     <div class="grid-container container">
-      <h1 class="text-cente">Programs</h1>
+      <h1 class="text-center">Programs</h1>
       <div class="table-container">
         <table class="unstriped">
           <thead>
@@ -132,6 +133,40 @@
       </form>
     </div>
   </main>
+
+  <!-- Footer -->
+  <footer class="flex-container flex-dir-column align-center align-middle">
+    <div class="footer-links flex-container flex-dir-column medium-flex-dir-row">
+      <div class="flex-container align-center align-middle" id="logo">
+        <p id="logo-text">LOGO</p>
+      </div>
+      <div class="footer-links flex-container flex-dir-row">
+        <div class="footer-link-list flex-container flex-dir-column">
+          <p class="footer-title">About us</p>
+          <a href="">Link</a>
+          <a href="">Second Link</a>
+          <a href="">Another Link</a>
+          <a href="">Final Link</a>
+        </div>
+        <div class="footer-link-list flex-container flex-dir-column">
+          <p class="footer-title">Help</p>
+          <a href="">Link</a>
+          <a href="">Second Link</a>
+          <a href="">Final Link</a>
+        </div>
+      </div>
+      <div class="footer-link-list flex-container flex-dir-column">
+        <p class="footer-title" id="find-us-title">Find us</p>
+        <div class="social-icons flex-container flex-dir-row">
+          <i class="fi-social-linkedin social-icon"></i>
+          <i class="fi-social-facebook social-icon"></i>
+          <i class="fi-social-instagram social-icon"></i>
+        </div>
+      </div>
+    </div>
+    <div id="divider"></div>
+    <p class="text-center" id="copyright">© 2024 WWW applications, All rights reserved.</p>
+  </footer>
 
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/foundation-sites@6.6.3/dist/js/foundation.min.js"></script>

@@ -4,7 +4,7 @@
 }
 
 #logo {
-    font-size: 50px;
+    font-size: 3rem;
     height: 80px;
     width: 180px;
 }
@@ -28,6 +28,6 @@
 /* Large devices (desktops, 992px and up) */
 @media (min-width: 992px) {
     #divider {
-        width: 700px;
+        width: 710px;
     }
 }
