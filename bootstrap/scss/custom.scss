@@ -71,6 +71,8 @@ $spacers: (
   9: $spacer * 4.75,
 );
 
+$enable-negative-margins: true;
+
 @import "../node_modules/bootstrap/scss/bootstrap";
 
 @import "../node_modules/bootstrap/scss/maps";
