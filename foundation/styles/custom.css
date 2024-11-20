@@ -3985,22 +3985,22 @@ table {
 thead,
 tbody,
 tfoot {
-  border: 1px solid rgb(242.25, 242.25, 242.25);
-  background-color: #ffffff;
+  border: 1px solid rgb(210.225, 221.8333333333, 240.075);
+  background-color: #E4EBF6;
 }
 
 caption {
-  padding: 0.5rem 0.625rem 0.625rem;
+  padding: 2rem;
   font-weight: bold;
 }
 
 thead {
-  background: rgb(248.625, 248.625, 248.625);
+  background: #AABEE1;
   color: #000000;
 }
 
 tfoot {
-  background: rgb(242.25, 242.25, 242.25);
+  background: rgb(210.225, 221.8333333333, 240.075);
   color: #000000;
 }
 
@@ -4012,27 +4012,27 @@ thead th,
 thead td,
 tfoot th,
 tfoot td {
-  padding: 0.5rem 0.625rem 0.625rem;
+  padding: 2rem;
   font-weight: bold;
   text-align: left;
 }
 
 tbody th,
 tbody td {
-  padding: 0.5rem 0.625rem 0.625rem;
+  padding: 2rem;
 }
 
 tbody tr:nth-child(even) {
   border-bottom: 0;
-  background-color: rgb(242.25, 242.25, 242.25);
+  background-color: rgb(210.225, 221.8333333333, 240.075);
 }
 
 table.unstriped tbody {
-  background-color: #ffffff;
+  background-color: #E4EBF6;
 }
 table.unstriped tbody tr {
-  border-bottom: 1px solid rgb(242.25, 242.25, 242.25);
-  background-color: #ffffff;
+  border-bottom: 1px solid rgb(210.225, 221.8333333333, 240.075);
+  background-color: #E4EBF6;
 }
 
 @media print, screen and (max-width: 63.99875em) {
@@ -4059,16 +4059,16 @@ table.scroll {
 }
 
 table.hover thead tr:hover {
-  background-color: rgb(243.525, 243.525, 243.525);
+  background-color: rgb(162.4608695652, 184.2347826087, 222.3391304348);
 }
 table.hover tfoot tr:hover {
-  background-color: rgb(237.15, 237.15, 237.15);
+  background-color: rgb(202.575, 216.1666666667, 237.525);
 }
 table.hover tbody tr:hover {
-  background-color: rgb(249.9, 249.9, 249.9);
+  background-color: rgb(220.35, 229.3333333333, 243.45);
 }
 table.hover:not(.unstriped) tr:nth-of-type(even):hover {
-  background-color: rgb(237.15, 237.15, 237.15);
+  background-color: rgb(201.225, 215.1666666667, 237.075);
 }
 
 .table-scroll {

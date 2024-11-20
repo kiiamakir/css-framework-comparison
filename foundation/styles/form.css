@@ -1,9 +1,13 @@
 h1 {
     padding-bottom: 2rem;
+    align-self: center;
 }
 
-.form-container {
+.container {
     padding-top: 2.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
 }
 
 .form-check-label {
